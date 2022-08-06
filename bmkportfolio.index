@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+<title>Balaji Murumbe Portfolio</title>
+<style type="text/css">
+body{
+padding:0;
+margin:0;
+}
+
+#pg2,
+#pg3,
+#pg4,
+#pg5,
+#pg6,
+#pg7{
+display:none;
+}
+*{
+box-sizing:border-box;
+}
+
+
+.card{
+
+height:100vh;
+width:100%;
+display:flex;
+flex-direction:column;
+background:white;
+overflow:auto;
+padding:5em 1em 5em 1em ;
+
+}
+.card div{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:left;
+font-size:20px;
+}
+#app{
+height:100vh;
+width:100vw;
+background:silver;
+overflow:auto;
+}
+#ranger{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+@keyframes openani{
+0%{
+ transform:translateX(20px) rotate(12deg) scale(0.5);
+ opacity:0;
+ 
+}
+50%{
+transform:translateX(0px) rotate(0deg) scale(1);
+ opacity:1;
+
+}
+80%{
+  transform:translateX(-20px) rotate(0deg) scale(1);
+  opacity:1;
+  
+}
+
+100%{
+transform:translateX(0px) rotate(0deg) scale(1);
+ opacity:1;
+
+}
+}
+
+#nextbuttoncard{
+height:100px;
+width:100%;
+position:fixed;
+left:0;
+right:0;
+background:green;
+}
+.nextbutton{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:absolute;
+bottom:0;
+right:0;
+left:0;
+height:70px;
+width:100;
+padding:8px;
+}
+.nextbutton button{
+
+    height:65px;
+    width:300px;
+    background:dodgerblue;
+    border-radius:50px;
+    border:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.5s;
+   
+}
+.nextbutton button:active{
+     transform:translateY(10px) scale(0.8);
+     opacity:0.5;
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+<div id="pg1">
+<div class="card">
+
+<div>
+<h1>Hi!</h1>
+<p>I am Balaji Murumbe.</p>
+<a href="https://www.linkedin.com/in/balaji-murumbe-815126207" target="blank">See LinkedIn Profile</a>
+</div>
+</div>
+</div>
+
+<div id="pg2">
+<div class="card">
+<div>
+<h1>I am passionate about </h1>
+<p>Software,UX/UI Design & Digital Marketing.</p>
+</div>
+
+</div>
+</div>
+
+<div id="pg3">
+<div class="card">
+<div>
+<h1>I am pro-efficient</h1>
+<p>In following programming languages</p>
+<ul>
+<li>Javascript</li>
+<li>p5js</li>
+<li>tensorflow js</li>
+<li>HTML5</li>
+<li>CSS3</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="pg4">
+<div class="card">
+<div>
+<h1>I am also code</h1>
+<p>In following programming languages</p>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Python</li>
+<li>Php</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="pg5">
+<div class="card">
+<div>
+<div>
+<h1>Instead of coder</h1>
+<p>I am also...</p>
+<ul>
+<li>Social media Content Creator</li>
+<li>Blogger</li>
+<li>Enterpreneur</li>
+</ul>
+</div>
+<div>
+<h2>Projects as a social media creator</h2>
+<ul>
+<li>I am founder of <a href="https://fb.com/todaysq" target="_blank">TodaysQ facebook page</a>, 
+we post learning related content & science facts
+on this page. it has 6000+ followers.
+</li>
+<li>I am managing social media pages , Google my business profiles for
+local small,Big business.</li>
+<li>See <a href="https://g.co/kgs/GsUfyU" target="_blank">Renuka collection one of my clients google business profile</a>. I given growth by
+increasing their reviews from 50 to more than 200 people given reviews. Increased brand awareness by regular 
+content creation and SEO.</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="pg6">
+<div class="card">
+<div>
+<h2>My Projects</h2>
+<p>Programming languages used for projects:</p>
+<p>Javascript,Javascript DOM,HTML5,CSS3,P5js,
+TensorflowJS</p>
+<ul>
+<li><a href="https://miningmind.github.io" target="_blank">MiningMind</a></li>
+<li><a href="https://blurground.github.io" target="_blank">Blur Image Background</a></li>
+<li><a href="https://richreads.github.io" target="_blank">Rich Reads</a></li>
+<li><a href="https://bit.ly/Renuka-Collection-Quiz-Contest" target="_blank">Quiz Contest</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="pg7">
+<div class="card">
+<div>
+<h1>See more on LinkedIn profile</h1>
+<p>Tap on following link to open linkedin profile.</p>
+<a href="https://www.linkedin.com/in/balaji-murumbe-815126207" target="blank">Balaji Murumbe on LinkedIn</a>
+</div>
+</div>
+</div>
+</div>
+<div class="nextbutton">
+<button onclick="showstory()">Next</button></button>
+</div>
+<script type="text/javascript">
+ 
+function openpg(p1,p2){
+var pg1 = document.getElementById(p1);
+var pg2 = document.getElementById(p2);
+ pg1.style.display="block";
+ pg2.style.display="none";
+ pg1.style.animation="openani 0.5s ease-in";
+ }
+ 
+var arr1 = ["pg1",
+"pg2",
+"pg3",
+"pg4",
+"pg5",
+"pg6",
+"pg7"];
+var arr2 = ["pg2",
+"pg3",
+"pg4",
+"pg5",
+"pg6",
+"pg7",
+"pg1"];
+
+var arrhead = ["Hi",
+"I am passionate about ",
+"I like to code in following languages",
+"",
+"E"];
+var arrpara = ["I am balaji Murumbe",
+"Design,Softwares & Marketing overall Creativity.",
+"C/C++,Python,PHP,Javascript,HTML5,CSS3",
+"",
+""];
+
+var i=0;
+function showstory(){
+
+openpg(arr2[i],arr1[i]);
+var para = document.getElementsByTagName("p");
+para[i].style.animation="openani 1s ease-out";
+i=i+1;
+if(i>=arr1.length){
+i=0;
+}
+
+}
+
+
+</script>
+</body>
+</html>
