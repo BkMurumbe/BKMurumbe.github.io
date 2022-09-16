@@ -7,8 +7,8 @@
   "background_color": "#fff",
   "description": "A portfolio app",
   "icons": [{
-    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHj4BcLZWBubI-9JJBa3ZjUl3B98qCdc3GBBcJvk13PpODfneD34XUbOTq9hq82V8NSnyba-RPaRS9-auuI4Js9mpSpYh2BG2kIEdg10b3S7qgzqNPZjMjbfiA4cz-gysyhvRjDtScBHzu7hbluD1MVm8qymQav6SM65TmMsVwp1xa0HbKHYn7xazh/s1600/project_20220916_2218082-01-01.jpeg",
-    "sizes": "192x192",
-    "type": "image/jpeg"
+    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKrDCmr2g9Ub_DbcWfmqhhOutUZ8930jA3Wl67hhqrVbzaaClfZgFnrZg9rAj5IsTQ1LKsh3AehMnYatTbn--5f7S1fnDZdIPgePwRHyBnFnIrSMGT1NBNYdUpMMzx-MHfLuNi6YEAq4REY9wgVvruSd4H_CkQj067WIM3wB_gduW99_4mV72e_oKr/s1600/project_20220916_2218082-01.png",
+   "sizes": "192x192",
+    "type": "image/png"
   }]
 }
