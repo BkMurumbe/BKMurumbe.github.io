@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+   <link rel="manifest" href="app.webmanifest">
 <title>Balaji Murumbe Portfolio</title>
 <style type="text/css">
 body{
@@ -238,7 +239,7 @@ TensorflowJS</p>
 <button onclick="showstory()">Next</button></button>
 </div>
 <script type="text/javascript">
- 
+ navigator.serviceWorker.register("worker.js")
 function openpg(p1,p2){
 var pg1 = document.getElementById(p1);
 var pg2 = document.getElementById(p2);
