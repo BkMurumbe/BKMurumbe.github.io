@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "bkmurumbe",
+  "short_name": "bkm",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A portfolio app",
+  "icons": [{
+    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHj4BcLZWBubI-9JJBa3ZjUl3B98qCdc3GBBcJvk13PpODfneD34XUbOTq9hq82V8NSnyba-RPaRS9-auuI4Js9mpSpYh2BG2kIEdg10b3S7qgzqNPZjMjbfiA4cz-gysyhvRjDtScBHzu7hbluD1MVm8qymQav6SM65TmMsVwp1xa0HbKHYn7xazh/s1600/project_20220916_2218082-01-01.jpeg",
+    "sizes": "192x192",
+    "type": "image/jpeg"
+  }],
+  "related_applications": [{
+    "platform": "",
+    "url": ""
+  }]
+}
