@@ -116,10 +116,23 @@ padding:8px;
      transform:translateY(10px) scale(0.8);
      opacity:0.5;
 }
+#inscard{
+   display: none
+   }
+   @media (display-mode: browser) {
+      #inscard {
+           display: block
+              }
 </style>
 </head>
 <body>
+<div id="inscard">
+<div>
+<button id="insbutton">Install App</button>
+</div>
+</div>
 <div id="app">
+
 
 <div id="pg1">
 <div class="card">
@@ -247,7 +260,35 @@ var pg2 = document.getElementById(p2);
  pg2.style.display="none";
  pg1.style.animation="openani 0.5s ease-in";
  }
- 
+ var deferredPrompt;
+ var installButton = document.getElementById("insbutton");
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevents the default mini-infobar or install dialog from appearing on mobile
+    e.preventDefault();
+      // Save the event because you'll need to trigger it later.
+        deferredPrompt = e;
+          // Show your customized install prompt for your PWA
+            // Your own UI doesn't have to be a single element, you
+              // can have buttons in different locations, or wait to prompt
+                // as part of a critical journey.
+                  showInAppInstallPromotion();
+                  });
+
+installButton.addEventListener('click', async () => {
+  // deferredPrompt is a global variable we've been using in the sample to capture the `beforeinstallevent`
+    deferredPrompt.prompt();
+      // Find out whether the user confirmed the installation or not
+        const { outcome } = await deferredPrompt.userChoice;
+          // The deferredPrompt can only be used once.
+            deferredPrompt = null;
+              // Act on the user's choice
+                if (outcome === 'accepted') {
+                    console.log('User accepted the install prompt.');
+                      } else if (outcome === 'dismissed') {
+                          console.log('User dismissed the install prompt');
+                            }
+                            });
+
 var arr1 = ["pg1",
 "pg2",
 "pg3",
