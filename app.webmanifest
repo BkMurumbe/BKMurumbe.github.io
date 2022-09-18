@@ -4,6 +4,7 @@
   "short_name": "bkm",
   "start_url": "/",
   "display": "standalone",
+  "theme_color": "dodgerblue",
   "background_color": "#fff",
   "description": "A portfolio app",
   "icons": [{
