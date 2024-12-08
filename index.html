@@ -1,357 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="dodgerblue" />	
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
-   <link rel="manifest" href="app.webmanifest">
-<title>Balaji Murumbe Portfolio</title>
-<style type="text/css">
-body{
-padding:0;
-margin:0;
-font-size:1.8em;
-}
-
-#pg2,
-#pg3,
-#pg4,
-#pg5,
-#pg6,
-#pg7{
-display:none;
-}
-*{
-box-sizing:border-box;
-}
-#inscard{
-width:100vw;
-height:50px;
-display:flex;
-justify-content:center;
-align-items:centre;
-height:40px;
-background:cyan;
-}
-#insbutton{
-height:40px;
-width:100%;
-border:none;
-background:none;
-font-size:16px;
-font-weight:bold;
-
-}
-.card{
-
-height:100vh;
-width:100%;
-display:flex;
-flex-direction:column;
-background:white;
-overflow:auto;
-padding:5em 1em 5em 1em ;
-
-}
-.card div{
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:left;
-font-size:20px;
-}
-#app{
-height:100vh;
-width:100vw;
-background:silver;
-overflow:auto;
-}
-#ranger{
-display:flex;
-justify-content:center;
-align-items:center;
-}
-@keyframes openani{
-0%{
- transform:translateX(20px) rotate(12deg) scale(0.5);
- opacity:0;
- 
-}
-50%{
-transform:translateX(0px) rotate(0deg) scale(1);
- opacity:1;
-
-}
-80%{
-  transform:translateX(-20px) rotate(0deg) scale(1);
-  opacity:1;
-  
-}
-
-100%{
-transform:translateX(0px) rotate(0deg) scale(1);
- opacity:1;
-
-}
-}
-
-#nextbuttoncard{
-height:50px;
-width:100%;
-position:fixed;
-left:0;
-right:0;
-background:green;
-z-index:100;
-}
-.nextbutton{
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-position: fixed;
-bottom:0;
-z-index:100;
-height:55px;
-width:100%;
-padding:8px;
-}
-.nextbutton button{
-
-    height:55px;
-    width:100%;
-    background:dodgerblue;
-    border:none;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.3s;
-    border-radius:8px;
-    
-   
-}
-.nextbutton button:active{
-     transform:scale(0.9);
-     opacity:0.9;
-}
-#inscard{
-   display: none
-   }
-   @media (display-mode: browser) {
-      #inscard {
-           display: block
-              }
-</style>
+    <title>Balaji Murumbe - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div id="inscard">
-<div>
-<button id="insbutton">Install App</button>
-</div>
-</div>
-<div id="app">
+<body class="bg-gray-50 py-10 font-sans">
 
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg p-8 space-y-8 border-t-4 border-blue-600">
 
-<div id="pg1">
-<div class="card">
+        <!-- Header Section -->
+        <header class="text-center space-y-4">
+            <h1 class="text-5xl font-extrabold text-gray-800 tracking-tight">Balaji Murumbe</h1>
+            <p class="text-xl text-gray-500">Social Media Project Manager | Software Developer</p>
+            <div class="text-gray-500 space-y-2">
+                <p>Email: <a href="mailto:balaji.murambe2002@gmail.com" class="text-blue-600 hover:underline">balaji.murambe2002@gmail.com</a></p>
+                <p>Location: Pune, Maharashtra, India</p>
+                <p><a href="https://www.linkedin.com/in/balajimurumbe" class="text-blue-600 hover:underline" target="_blank">LinkedIn</a></p>
+            </div>
+        </header>
 
-<div>
-<h1>Hi!</h1>
-<p>I am Balaji Murumbe.</p>
-<a href="https://github.com/BkMurumbe?tab=repositories" target="blank">See my GitHub profile</a>
-</div>
-</div>
-</div>
+        <!-- Summary Section -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Summary</h2>
+            <p class="text-gray-700 leading-relaxed">I am a highly motivated professional with extensive experience in Digital Marketing and Software Development. Passionate about driving results and optimizing user experiences, I specialize in digital strategy, team management, and emerging technologies. My work is driven by creativity and data, and I thrive in challenging, fast-paced environments.</p>
+        </section>
 
-<div id="pg2">
-<div class="card">
-<div>
-<h1>I am passionate about </h1>
-<p>Software,UX/UI Design & Digital Marketing.</p>
-</div>
+        <!-- Experience Section -->
+        <section class="space-y-6">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Experience</h2>
 
-</div>
-</div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Social Media Manager - Vishwakarma University</h3>
+                <p class="text-gray-600 text-sm">May 2024 - Present</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                    <li>Manage research projects related to Pune city.</li>
+                    <li>Track major investments and create engaging content for social media platforms.</li>
+                    <li>Develop digital strategies to increase community engagement.</li>
+                </ul>
+            </div>
 
-<div id="pg3">
-<div class="card">
-<div>
-<h1>I am pro-efficient</h1>
-<p>In following programming languages</p>
-<ul>
-<li>Javascript</li>
-<li>p5js</li>
-<li>tensorflow js</li>
-<li>HTML5</li>
-<li>CSS3</li>
-</ul>
-</div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Digital Marketing Strategist - SmartUp</h3>
+                <p class="text-gray-600 text-sm">Aug 2023 - Jun 2024</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                    <li>Developed and implemented digital marketing strategies to enhance brand presence.</li>
+                    <li>Led a team to achieve higher engagement on social media platforms.</li>
+                    <li>Optimized PPC campaigns for better ROI and lead generation.</li>
+                </ul>
+            </div>
 
-</div>
-</div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Digital Marketing Executive - TodaysQ Magazine</h3>
+                <p class="text-gray-600 text-sm">Jan 2019 - Aug 2023</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                    <li>Executed digital marketing campaigns to increase brand awareness.</li>
+                    <li>Managed content creation and social media strategies.</li>
+                    <li>Analyzed metrics to improve the reach of campaigns.</li>
+                </ul>
+            </div>
+        </section>
 
-<div id="pg4">
-<div class="card">
-<div>
-<h1>I am also code</h1>
-<p>In following programming languages</p>
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>Python</li>
-<li>Php</li>
-</ul>
-</div>
+        <!-- Education Section -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Education</h2>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Bachelor of Computer Applications (BCA)</h3>
+                <p class="text-gray-600">University of Pune (Dy Patil College)</p>
+                <p class="text-gray-600">Aug 2020 - Jun 2023</p>
+            </div>
+        </section>
 
-</div>
-</div>
+        <!-- Projects Section -->
+        <section class="space-y-6">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Projects</h2>
 
-<div id="pg5">
-<div class="card">
-<div>
-<div>
-<h1>Instead of coder</h1>
-<p>I am also...</p>
-<ul>
-<li>Social media Content Creator</li>
-<li>Blogger</li>
-<li>Enterpreneur</li>
-</ul>
-</div>
-<div>
-<h2>Projects as a social media creator</h2>
-<ul>
-<li>I am founder of <a href="https://fb.com/todaysq" target="_blank">TodaysQ facebook page</a>, 
-we post learning related content & science facts
-on this page. it has 6000+ followers.
-</li>
-<li>I am managing social media pages , Google my business profiles for
-local small,Big business.</li>
-<li>See <a href="https://g.co/kgs/GsUfyU" target="_blank">Renuka collection one of my clients google business profile</a>. I given growth by
-increasing their reviews from 50 to more than 200 people given reviews. Increased brand awareness by regular 
-content creation and SEO.</li>
-<li>See <a href="https://ssvkillari.blogspot.com" target="_blank" >here my blog on blogger</a>.</li>
-</ul>
-</div>
-</div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Book My Doctor Web App</h3>
+                <p class="text-gray-600 text-sm">Oct 2022 - Feb 2023</p>
+                <p class="text-gray-700">Built a SPA with Vanilla JavaScript, HTML5, and CSS3 to allow patients to find specialists and book appointments.</p>
+                <p><a href="https://bkmurumbe.github.io/bookMyDoctorpro" target="_blank" class="text-blue-600 hover:underline">View Demo</a></p>
+            </div>
 
-</div>
-</div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Quizzo App</h3>
+                <p class="text-gray-600 text-sm">Feb 2022 - Jun 2022</p>
+                <p class="text-gray-700">Developed a quiz application enabling players to join contests and earn certifications using JavaScript and HTML5.</p>
+                <p><a href="https://bkmurumbe.github.io/RenukaQuiz" target="_blank" class="text-blue-600 hover:underline">View Demo</a></p>
+            </div>
 
-<div id="pg6">
-<div class="card">
-<div>
-<h2>My Projects</h2>
-<p>Programming languages used for projects:</p>
-<p>Javascript,Javascript DOM,HTML5,CSS3,P5js,
-TensorflowJS</p>
-<ol>
-<li><a href="https://miningmind.github.io" target="blank">MiningMind Game</a></li>
-<li><a href="https://blurground.github.io" target="blank">Blur Image Background tool</a></li>
-<li><a href="https://bkmurumbe.github.io/RichReads" target="blank">Rich Reads for faster reading</a></li>
-<li><a href="https://bit.ly/Renuka-Collection-Quiz-Contest" target="blank">Quiz Contest for Renuka Collection</a></li>
-<li><a href="https://bit.ly/Mauli-Coaching-Classes-Quiz-Contest" target="blank">Mauli Coaching Classes Quiz Contest</a></li>
-<li><a href="https://bit.ly/sparkerbmApp" target="blank">sparkerbm Software for businesses</a></li>
-<li><a href="https://bit.ly/CrazyEasyCalculator" target="blank">CrazyEasy Calculator</a></li>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">Blurground AI</h3>
+                <p class="text-gray-600 text-sm">Oct 2022 - Nov 2022</p>
+                <p class="text-gray-700">Built an AI-powered app to blur image backgrounds using HTML5, CSS3, JavaScript, and TensorFlow.js.</p>
+                <p><a href="https://blurground.github.io" target="_blank" class="text-blue-600 hover:underline">View Demo</a></p>
+            </div>
+        </section>
 
-</ol>
-</div>
+        <!-- Skills Section with Highlights -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Skills</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-blue-100 text-blue-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">Node.js</p>
+                </div>
+                <div class="p-4 bg-green-100 text-green-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">HTML5, CSS3</p>
+                </div>
+                <div class="p-4 bg-yellow-100 text-yellow-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">JavaScript (Vanilla, TensorFlow.js)</p>
+                </div>
+                <div class="p-4 bg-red-100 text-red-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">Project Management</p>
+                </div>
+                <div class="p-4 bg-indigo-100 text-indigo-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">Social Media Management</p>
+                </div>
+                <div class="p-4 bg-purple-100 text-purple-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">Generative AI</p>
+                </div>
+                <div class="p-4 bg-teal-100 text-teal-800 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">PPC Ads Campaigns</p>
+                </div>
+            </div>
+        </section>
 
-</div>
-</div>
+        <!-- Certifications Section with Highlights -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Certifications</h2>
+            <div class="space-y-2">
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-blue-100 text-blue-800 rounded-lg shadow-md">🎓</span>
+                    <p class="font-semibold">Fundamentals of Digital Marketing - Google</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-yellow-100 text-yellow-800 rounded-lg shadow-md">🎓</span>
+                    <p class="font-semibold">Storytelling for Impact: Photography - Coursera</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-green-100 text-green-800 rounded-lg shadow-md">🎓</span>
+                    <p class="font-semibold">Google AI Essentials</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-red-100 text-red-800 rounded-lg shadow-md">🎓</span>
+                    <p class="font-semibold">MS-CIT</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-indigo-100 text-indigo-800 rounded-lg shadow-md">🎓</span>
+                    <p class="font-semibold">Web Development (JS, HTML5, CSS3) - Mimo</p>
+                </div>
+            </div>
+        </section>
 
-<div id="pg7">
-<div class="card">
-<div>
-<h1>See more on LinkedIn profile</h1>
-<p>Tap on following link to open linkedin profile.</p>
-<a href="https://www.linkedin.com/in/balaji-murumbe-815126207" target="blank">Balaji Murumbe on LinkedIn</a>
-</div>
-</div>
-</div>
-</div>
-<div class="nextbutton">
-<button onclick="showstory()">Next</button></button>
-</div>
-<script type="text/javascript">
- navigator.serviceWorker.register("worker.js")
-function openpg(p1,p2){
-var pg1 = document.getElementById(p1);
-var pg2 = document.getElementById(p2);
- pg1.style.display="block";
- pg2.style.display="none";
- pg1.style.animation="openani 0.5s ease-in";
- }
- var deferredPrompt;
- var installButton = document.getElementById("insbutton");
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevents the default mini-infobar or install dialog from appearing on mobile
-    e.preventDefault();
-      // Save the event because you'll need to trigger it later.
-        deferredPrompt = e;
-          // Show your customized install prompt for your PWA
-            // Your own UI doesn't have to be a single element, you
-              // can have buttons in different locations, or wait to prompt
-                // as part of a critical journey.
-                  showInAppInstallPromotion();
-                  });
+        <!-- Languages Section -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-600 pb-2">Languages</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                <li>Hindi - Native</li>
+                <li>Marathi - Native</li>
+                <li>English - Fluent</li>
+            </ul>
+        </section>
 
-installButton.addEventListener('click', async () => {
-  // deferredPrompt is a global variable we've been using in the sample to capture the `beforeinstallevent`
-    deferredPrompt.prompt();
-      // Find out whether the user confirmed the installation or not
-        const { outcome } = await deferredPrompt.userChoice;
-          // The deferredPrompt can only be used once.
-            deferredPrompt = null;
-              // Act on the user's choice
-                if (outcome === 'accepted') {
-                    console.log('User accepted the install prompt.');
-                      } else if (outcome === 'dismissed') {
-                          console.log('User dismissed the install prompt');
-                            }
-                            });
+    </div>
 
-var arr1 = ["pg1",
-"pg2",
-"pg3",
-"pg4",
-"pg5",
-"pg6",
-"pg7"];
-var arr2 = ["pg2",
-"pg3",
-"pg4",
-"pg5",
-"pg6",
-"pg7",
-"pg1"];
-
-var arrhead = ["Hi",
-"I am passionate about ",
-"I like to code in following languages",
-"",
-"E"];
-var arrpara = ["I am balaji Murumbe",
-"Design,Softwares & Marketing overall Creativity.",
-"C/C++,Python,PHP,Javascript,HTML5,CSS3",
-"",
-""];
-
-var i=0;
-function showstory(){
-
-openpg(arr2[i],arr1[i]);
-var para = document.getElementsByTagName("p");
-para[i].style.animation="openani 1s ease-out";
-i=i+1;
-if(i>=arr1.length){
-i=0;
-}
-
-}
-
-
-</script>
 </body>
 </html>
